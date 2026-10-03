@@ -12,14 +12,15 @@
 <body>
   <p><a href="./index.html">LAVÉ</a> · <a href="./terms.html">Terms</a> · <a href="./support.html">Support</a></p>
   <h1>LAVÉ Privacy Policy</h1>
-  <p>Version 2026.10.04 · Last updated October 4, 2026</p>
+  <p>Version 2026.10.05 · Last updated October 5, 2026</p>
   <p>APPealing Labs (“we”) operates LAVÉ, The Precision Cleaning Marketplace.</p>
   <h2>1. Data we collect</h2>
   <ul>
     <li>Identifiers you enter: name, optional email, optional phone (email and phone stay on your device).</li>
     <li>Profile details: role (owner or pro), city, credentials, service zones, property notes.</li>
-    <li>User content stored on our server: the requests you post (title, checklist, description, target price, city, approximate map position rounded to about 1 km, and street address), your bids and bid messages, job messages between the owner and the accepted pro, signatures on the Statement of Work, ratings and comments, reports and your block list. Before/after photos and vault notes stay on your device.</li>
-    <li>Location: precise location only with When In Use permission (nearby jobs and Start Clean). To show nearby jobs we send your approximate position to our server. Posted jobs are shown to other users with a city and a position rounded to about 1 km; the street address is shown only to the pro the owner accepts.</li>
+    <li>User content stored on our server: the requests you post (title, checklist, description, target price, city, approximate map position rounded to about 1 km, and street address), your bids and bid messages, job messages between the owner and the accepted pro, signatures on the Statement of Work, ratings and comments, reports and your block list. Pros’ optional before/after job photos and optional insurance/license pictures are uploaded to our server (small compressed images; job photos are deleted after about 120 days or when the account is deleted). Vault notes stay on your device.</li>
+    <li>Security and abuse logs: to protect owners from scraping and misuse we log on our server which accounts opened which requests and when (with a hashed IP address), record rate-limit and abuse events (including the IP address), and keep a one-way hash of the identity details Stripe reports so one person cannot hold several pro accounts. Used only for security and support.</li>
+    <li>Location: precise location only with When In Use permission (nearby jobs and Start Clean). To show nearby jobs we send your approximate position to our server. Posted jobs are shown to other users with a city and a position rounded to about 1 km; the street address and your name are shown only to the pro the owner accepts, and only after the owner’s payment is held.</li>
     <li>Device: push token if you allow notifications, used to alert you to new bids, acceptance, payment and messages.</li>
     <li>Payments: Stripe processes cards and Connect payouts. LAVÉ does not store full card numbers or CVV. Our payments server stores, per job: amount, fee, status, Stripe payment and transfer IDs, your job title, a random device-bound identifier (a hash of a secret kept in your iPhone Keychain; not your name or email; you can copy it as a recovery key to restore your account on a new device), and for pros a Stripe connected-account ID and payout code. Stripe collects pros’ identity and bank details directly.</li>
     <li>Diagnostics: no third-party analytics SDK in the current binary. Apple may collect crash data.</li>
@@ -30,12 +31,12 @@
   <ul>
     <li>Stripe, Inc. — card payments, payouts and identity verification.</li>
     <li>Our server hosting (Expo EAS Hosting) and database (Upstash Redis), as processors, for the marketplace and payment records described above, and Expo’s push notification service to deliver alerts.</li>
-    <li>Other users: the owner and accepted pro see each other’s display name, bids, messages and ratings; nearby pros see your request’s title, checklist, price, city and rounded position.</li>
+    <li>Other users: the owner and accepted pro see each other’s display name, bids, messages and ratings; nearby pros see a summary of your request (job type, size, price, city and rounded position); identity-verified pros also see the title, checklist and description, but not your name or address. The owner and accepted pro see each other’s name once payment is held. Notifications never include message text, names or addresses.</li>
     <li>An emergency contact you designate — only when you tap Ping contact.</li>
     <li>Law enforcement when required by law.</li>
   </ul>
   <h2>4. Location and photos</h2>
-  <p>Location is When In Use only. Photos are used for job verification and disputes and stay on your device; we do not upload them.</p>
+  <p>Location is When In Use only. Optional before/after photos added by a pro, and optional insurance/license pictures, are uploaded to our server and shown only to the people involved in the job (documents to owners reviewing that pro’s bid). They show completed work and support disputes; they are not used for advertising. Job photos are kept about 120 days.</p>
   <h2>5. Retention and deletion</h2>
   <p>On-device data remains until you use Profile → Delete account &amp; data or uninstall. Delete account &amp; data also removes your profile, messages, notifications and block list from our server, cancels your open requests and erases their titles, descriptions and addresses, withdraws your bids, and closes your payout account (not possible while a payment is held or in dispute). Marketplace data is otherwise kept while your account is active. Payment records are kept as required for tax, fraud and legal obligations, in de-identified form after deletion. Email <a href="mailto:HQ@appealinglabs.com">HQ@appealinglabs.com</a> to request access or correction. We respond within 30 days.</p>
   <h2>6. Children</h2>
